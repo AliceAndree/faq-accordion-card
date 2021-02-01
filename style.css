@@ -64,13 +64,14 @@ body {
 }
 
 .accordion {
+    display: block;
     background-color: transparent;
     width: 100%;
     text-align: left;
     font-size: 14px;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding: 10px 0 10px 0;
     color: hsl(237, 12%, 33%);
 }
 
@@ -82,14 +83,24 @@ body {
     color: hsl(14, 88%, 65%);
 }
 
-.accordion:active {
-    font-weight: 700;
+.accordion.active {
     color: hsl(238, 29%, 16%);
+    font-weight: 700;
 }
 
 .accordion svg {
     float: right;
 }
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+} 
 
 .divider {
     height: 1px;
