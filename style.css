@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+html,
+body {
+    height: 100%;
+}
+body {
+    width: 1440px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+   
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 920px;
+    height: 509px;
+    border-radius: 23px;
+    margin: 125px auto 0;
+    display: flex;
+    align-items: center; 
+    overflow: hidden;
+    box-shadow:         0px 50px 50px -20px rgba(53, 18, 122, 0.4972);
+    -moz-box-shadow:    0px 50px 50px -20px rgba(53, 18, 122, 0.4972);
+    -webkit-box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.4972);
+}
+
+.left-block {
+    width: 460px;
+    height: 100%;
+    float: left;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -572px -295px ;
+}
+
+.illustration {
+    margin: 70px 0 0 -80px;
+    
+}
+
+.illustration-mobile {
+    display: none;
+}
+
+.box-illustration {
+    position: absolute;
+    top: 333px;
+    left: 167px;
+}
+
+.right-block {
+    width: 350px;
+    padding-left: 10px;
+    float: right;
+}
+
+.title {
+    color: hsl(238, 29%, 16%);
+}
+
+.accordion {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0 10px 0;
+    color: hsl(237, 12%, 33%);
+}
+
+.accordion:focus {
+    outline: none;
+}
+
+.accordion:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.accordion.active {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+.accordion svg {
+    float: right;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+} 
+
+.divider {
+    height: 1px;
+    background-color: hsl(240, 5%, 91%);
+    border: none;
+}
+
+.answer {
+    font-size: 12px;
+    color: hsl(240, 6%, 50%);
+    line-height: 18px;
+}
+
+.attribution {
+    margin-top: 100px;
+}
+
+@media (max-width: 376px) {
+    body {
+        width: 375px;
+
+    }
+
+    .container {
+        width: 327px;
+        height: 535px;
+        margin-top: 160px;
+        background-image: url(./images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 43px 0px;
+        overflow: visible;
+    }
+
+    .left-block {
+        display: none;
+    }
+
+    .right-block {
+        width: 279px;
+        padding-left: 0;
+        margin: 50px auto 0;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .illustration, 
+    .box-illustration {
+        display: none;
+    }
+
+    .illustration-mobile {
+        display: block;
+        position: absolute;
+        top: 54px;
+        left: 40px;
+    }
+
+    .attribution {
+        margin-top: 50px;
+    }
+}
