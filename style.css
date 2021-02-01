@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 html,
-body,
-.screen {
+body {
     height: 100%;
 }
 body {
@@ -16,18 +15,12 @@ body {
    
 }
 
-.screen {
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-}
-
 .container {
     background-color: hsl(0, 0%, 100%);
     width: 920px;
     height: 509px;
     border-radius: 23px;
-    margin: auto;
+    margin: 125px auto 0;
     display: flex;
     align-items: center; 
     overflow: hidden;
@@ -122,9 +115,7 @@ body {
 }
 
 .attribution {
-    position: fixed;
-    top: 700px;
-    left: 570px;
+    margin-top: 100px;
 }
 
 @media (max-width: 376px) {
@@ -136,9 +127,7 @@ body {
     .container {
         width: 327px;
         height: 535px;
-        position: absolute;
-        top: 148px;
-        left: 24px;
+        margin-top: 160px;
         background-image: url(./images/bg-pattern-mobile.svg);
         background-repeat: no-repeat;
         background-position: 43px 0px;
@@ -167,7 +156,11 @@ body {
     .illustration-mobile {
         display: block;
         position: absolute;
-        top: -109px;
-        left: 17px;
+        top: 54px;
+        left: 40px;
+    }
+
+    .attribution {
+        margin-top: 50px;
     }
 }
