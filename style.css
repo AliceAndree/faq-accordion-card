@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-html,
 body {
-    height: 100%;
-}
-body {
-    width: 1440px;
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 400;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
@@ -116,12 +111,18 @@ body {
 
 .attribution {
     margin-top: 100px;
+    padding-bottom: 100px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 415px) {
+    html,
     body {
-        width: 375px;
+        height: auto;
+        overflow: visible;
+    }
 
+    body {
+        width: 100%;
     }
 
     .container {
@@ -162,5 +163,13 @@ body {
 
     .attribution {
         margin-top: 50px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 415px) and (min-height: 813px) {
+    
+    .attribution {
+        padding-bottom: 150px;
     }
 }
